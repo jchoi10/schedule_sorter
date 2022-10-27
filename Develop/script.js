@@ -1,3 +1,3 @@
 //Display calender
-var today = moment().format('LLLL');
-$("#currentDay").html(today);
+var day = moment().format('MMMM Do YYYY, h:mm:ss a');
+$("#currentDay").html(day);
