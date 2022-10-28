@@ -10,18 +10,18 @@ $(document).ready(function () {
         localStorage.setItem(time, task);
     })
 
-    $("#0800hour .description").val(localStorage.getItem("0800hour"));
-    $("#0900hour .description").val(localStorage.getItem("0900hour"));
-    $("#1000hour .description").val(localStorage.getItem("1000hour"));
-    $("#1100hour .description").val(localStorage.getItem("1100hour"));
-    $("#1200hour .description").val(localStorage.getItem("1200hour"));
-    $("#1300hour .description").val(localStorage.getItem("1300hour"));
-    $("#1400hour .description").val(localStorage.getItem("1400hour"));
-    $("#1500hour .description").val(localStorage.getItem("1500hour"));
-    $("#1600hour .description").val(localStorage.getItem("1600hour"));
-    $("#1700hour .description").val(localStorage.getItem("1700hour"));
-    $("#1800hour .description").val(localStorage.getItem("1800hour"));
-    $("#1900hour .description").val(localStorage.getItem("1900hour"));
+    $("#08hour .description").val(localStorage.getItem("08hour"));
+    $("#09hour .description").val(localStorage.getItem("09hour"));
+    $("#10hour .description").val(localStorage.getItem("10hour"));
+    $("#11hour .description").val(localStorage.getItem("11hour"));
+    $("#12hour .description").val(localStorage.getItem("12hour"));
+    $("#13hour .description").val(localStorage.getItem("13hour"));
+    $("#14hour .description").val(localStorage.getItem("14hour"));
+    $("#15hour .description").val(localStorage.getItem("15hour"));
+    $("#16hour .description").val(localStorage.getItem("16hour"));
+    $("#17hour .description").val(localStorage.getItem("17hour"));
+    $("#18hour .description").val(localStorage.getItem("18hour"));
+    $("#19hour .description").val(localStorage.getItem("19hour"));
 
     function hourCounter () {
         var currentTime= moment().hour();
