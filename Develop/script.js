@@ -28,8 +28,21 @@ $(document).ready(function () {
 
         $(".timeBlock").each(function() {
             var slotTime = parseInt($(this).attr("id").split("hour")[0]);
-            console.log(slotTime)
-            console.log(currentTime)
+            // console.log(slotTime)
+            // console.log(currentTime)
+            if (currentTime < slotTime) {
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+                $(this).addClass("past");
+            } else if (currentTime === slotTime) {
+                $(this).removeClass("future");
+                $(this).removeClass("past");
+                $(this).addClass("present");
+            } else {
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
         })
     }
 
