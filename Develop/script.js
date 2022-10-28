@@ -26,5 +26,12 @@ $(document).ready(function () {
     function hourCounter () {
         var currentTime= moment().hour();
 
+        $(".timeBlock").each(function() {
+            var slotTime = parseInt($(this).attr("id").split("hour")[0]);
+            console.log(slotTime)
+            console.log(currentTime)
+        })
     }
-})
+
+    hourCounter();
+});
